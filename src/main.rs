@@ -264,7 +264,7 @@ fn main() -> Result<()> {
 
     // create trie
     let mut builder = TrieBuilder::new();
-    let file = File::open("../english-words/words_alpha.txt")?;
+    let file = File::open("./english-words/words_alpha.txt")?;
     // let file = File::open("/usr/share/dict/words")?;
     for line in io::BufReader::new(file).lines() {
         builder.push(line?);
